@@ -1,0 +1,44 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/bootstrap.min.css'}">
+                <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <div id="header">
+            <h1>Merchandise Pickup Unit Back Office Services</h1> 
+        </div>
+        
+        <div class="span-3" id="body">
+        <h2>Kiosk Service</h2>
+		    <ul>
+		    <li><a href="http://localhost:9100/kiosk/12345" target="_blank">Get MPU Kiosks by Store</a>
+		     <p>Description: gets all kiosks by store number </p>
+		    </li>
+		    <li><a href="http://localhost:9100/kiosk/mpucaptain/1181/2" target="_blank">Get MPU Captain for Kiosk By Store</a>
+		     <p>Description: gets MPU Captain detail for Kiosk  at store number </p>
+		    </li>
+		    <li><a href="http://localhost:9100/kiosk/updatecaptain/1181/2/csrb4" target="_blank">Update MPU Captain for Kiosk By Store</a>
+		     <p>Description: Update MPU Captain detail for Kiosk  at store number </p>
+		    </li>
+		    </ul>
+       
+
+        <!--  
+        <h2>NPOS Service</h2>
+        
+        <h2>Overhead Monitor Service</h2>
+        
+        <h2>IHeld Service</h2>
+        
+        -->
+         <h2>Admin Services</h2>
+         <h3>Cache Services</h3>
+          <ul>
+		    <li><a href="http://localhost:9100/cache/expirytime" target="_blank">Get Default Expiry Time </a>
+		     <p>Description: gets default expiry time for  Cache</p>
+		    </li>       
+		    <li><a href="http://localhost:9100/cache/kiosk/store/1235" target="_blank">Add All Kiosks to the Cache</a>
+		     <p>Description: Add All Kiosks to the Cache</p>
+		    </li>
+		  </ul>
+         </div>
